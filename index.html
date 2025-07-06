@@ -1,0 +1,788 @@
+<!DOCTYPE html>
+<html lang="th">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- SEO Meta Tags -->
+    <meta name="description" content="Coco’s Nai Harn Restaurant - ร้านอาหารต่างชาติริมทะเลที่ให้คุณสัมผัสรสชาติแห่งมหาสมุทร พร้อมวิวทะเลสวยงามและอาหารทะเลสดใหม่">
+    <meta name="keywords" content="ร้านอาหารทะเล, Coco’s Nai Harn Restaurant , เมนูอาหารทะเล, ร้านอาหารเมดิเตอร์เรเนียน, ร้านอาหารริมทะเล">
+    <meta name="author" content="Coco’s Nai Harn Restaurant">
+    <link rel="canonical" href="https://www.oceanbreezerestaurant.com/ ">
+    <!-- Open Graph / Facebook -->
+    <meta property="og:type" content="website">
+    <meta property="og:title" content="Coco’s Nai Harn Restaurant">
+    <meta property="og:description" content="ร้านอาหารต่างชาติริมทะเลที่ให้คุณสัมผัสรสชาติแห่งมหาสมุทร">
+    <meta property="og:image" content="https://www.oceanbreezerestaurant.com/images/og-image.jpg ">
+    <meta property="og:url" content="https://www.oceanbreezerestaurant.com/ ">
+    <meta property="og:site_name" content="Coco’s Nai Harn Restaurant">
+    <title>Coco’s Nai Harn Restaurant - ร้านอาหารริมทะเล</title>
+
+    <!-- Structured Data -->
+    <script type="application/ld+json">
+    {
+      "@context": "https://schema.org ",
+      "@type": "Restaurant",
+      "name": "Coco’s Nai Harn Restaurant",
+      "image": "https://www.oceanbreezerestaurant.com/images/logo.png ",
+      "description": "ร้านอาหารต่างชาติริมทะเลที่ให้คุณสัมผัสรสชาติแห่งมหาสมุทร",
+      "address": {
+        "@type": "PostalAddress",
+        "streetAddress": "123 ถนนชายทะเล",
+        "addressLocality": "ตำบลบางแสน อำเภอเมือง",
+        "addressRegion": "ชลบุรี",
+        "postalCode": "20130",
+        "addressCountry": "TH"
+      },
+      "telephone": "038-123-456",
+      "url": "https://www.oceanbreezerestaurant.com/ ",
+      "servesCuisine": ["เมดิเตอร์เรเนียน", "ยุโรป", "อาหารทะเล"],
+      "priceRange": "฿฿ - ฿฿฿"
+    }
+    </script>
+
+    <!-- CSS Libraries -->
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.3.0/css/bootstrap.min.css " rel="stylesheet">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css " rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;700&family=Sarabun:wght@300;400;600&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/lipis/flag-icons@7.2.3/css/flag-icons.min.css"/>    <style>
+        :root {
+            --primary-color: #2c5282;
+            --secondary-color: #4299e1;
+            --accent-color: #ed8936;
+            --text-dark: #2d3748;
+            --text-light: #718096;
+            --sand-color: #f7fafc;
+        }
+        .language-switcher {
+    position: fixed !important;
+    top: 1rem !important;
+    right: 1rem !important;
+    z-index: 9999 !important;
+    display: block !important;
+}
+        .language-switcher button {
+            margin-left: 0.5rem;
+        }
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: 'Sarabun', sans-serif;
+            line-height: 1.6;
+            color: var(--text-dark);
+            overflow-x: hidden;
+        }
+
+        .hero-section {
+            height: 100vh;
+            background: linear-gradient(rgba(44, 82, 130, 0.4), rgba(66, 153, 225, 0.4)), 
+            url('img/co10.png') center center / cover no-repeat;
+            background-size: cover;
+            background-position: center;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            text-align: center;
+            position: relative;
+        }
+
+        .hero-content {
+            color: white;
+            z-index: 2;
+            animation: fadeInUp 1s ease-out;
+        }
+
+        .hero-title {
+            font-family: 'Playfair Display', serif;
+            font-size: 4rem;
+            font-weight: 700;
+            text-shadow: 2px 2px 4px rgba(0,0,0,0.3);
+            margin-bottom: 1rem;
+        }
+
+        .hero-subtitle {
+            font-size: 1.5rem;
+            font-weight: 300;
+            margin-bottom: 2rem;
+            text-shadow: 1px 1px 2px rgba(0,0,0,0.3);
+        }
+
+        .btn-primary-custom {
+            background: linear-gradient(45deg, var(--accent-color), #f56500);
+            border: none;
+            padding: 12px 30px;
+            font-weight: 600;
+            border-radius: 50px;
+            transition: all 0.3s ease;
+            text-transform: uppercase;
+            letter-spacing: 1px;
+        }
+
+        .btn-primary-custom:hover {
+            transform: translateY(-2px);
+            box-shadow: 0 8px 25px rgba(237, 137, 54, 0.3);
+        }
+
+       
+
+        @keyframes wave {
+            0% { background-position-x: 0; }
+            100% { background-position-x: 1920px; }
+        }
+
+        @keyframes fadeInUp {
+            from {
+                opacity: 0;
+                transform: translateY(50px);
+            }
+            to {
+                opacity: 1;
+                transform: translateY(0);
+            }
+        }
+
+        .navbar {
+            background: rgba(255, 255, 255, 0.95);
+            backdrop-filter: blur(10px);
+            box-shadow: 0 2px 20px rgba(0,0,0,0.1);
+            transition: all 0.3s ease;
+        }
+
+        .navbar-brand {
+            font-family: 'Playfair Display', serif;
+            font-weight: 700;
+            font-size: 1.8rem;
+            color: var(--primary-color);
+        }
+
+        .nav-link {
+            font-weight: 500;
+            color: var(--text-dark);
+            transition: color 0.3s ease;
+        }
+
+        .nav-link:hover {
+            color: var(--accent-color);
+        }
+
+        .section-title {
+            font-family: 'Playfair Display', serif;
+            font-size: 2.5rem;
+            font-weight: 700;
+            color: var(--primary-color);
+            text-align: center;
+            margin-bottom: 3rem;
+            position: relative;
+        }
+
+        .section-title::after {
+            content: '';
+            position: absolute;
+            bottom: -10px;
+            left: 50%;
+            transform: translateX(-50%);
+            width: 80px;
+            height: 3px;
+            background: linear-gradient(45deg, var(--accent-color), #f56500);
+        }
+
+        .menu-item {
+            background: white;
+            border-radius: 15px;
+            overflow: hidden;
+            box-shadow: 0 10px 30px rgba(0,0,0,0.1);
+            transition: all 0.3s ease;
+            margin-bottom: 2rem;
+        }
+
+        .menu-item:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 15px 40px rgba(0,0,0,0.15);
+        }
+
+        .menu-item-img {
+            height: 200px;
+            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            color: white;
+            font-size: 3rem;
+        }
+
+        .menu-item-content {
+            padding: 1.5rem;
+        }
+
+        .menu-item-title {
+            font-size: 1.3rem;
+            font-weight: 600;
+            color: var(--primary-color);
+            margin-bottom: 0.5rem;
+        }
+
+        .menu-item-price {
+            font-size: 1.2rem;
+            font-weight: 600;
+            color: var(--accent-color);
+            float: right;
+        }
+
+        .about-section {
+            background: linear-gradient(135deg, #f8fafc 0%, #e2e8f0 100%);
+            padding: 5rem 0;
+        }
+
+        .contact-section {
+            background: var(--primary-color);
+            color: white;
+            padding: 5rem 0;
+        }
+
+        .contact-info {
+            background: rgba(255, 255, 255, 0.1);
+            padding: 2rem;
+            border-radius: 15px;
+            margin-bottom: 2rem;
+            backdrop-filter: blur(10px);
+        }
+
+        .contact-info i {
+            font-size: 2rem;
+            color: var(--accent-color);
+            margin-bottom: 1rem;
+        }
+
+        .footer {
+            background: var(--text-dark);
+            color: white;
+            padding: 2rem 0;
+            text-align: center;
+        }
+
+        .social-links a {
+            color: white;
+            font-size: 1.5rem;
+            margin: 0 1rem;
+            transition: color 0.3s ease;
+        }
+
+        .social-links a:hover {
+            color: var(--accent-color);
+        }
+
+        /* Gallery Styles */
+        .gallery-item {
+            height: 250px;
+            overflow: hidden;
+            border-radius: 15px;
+            box-shadow: 0 8px 25px rgba(0,0,0,0.1);
+            transition: all 0.3s ease;
+        }
+
+        .gallery-item:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 15px 40px rgba(0,0,0,0.2);
+        }
+
+        .placeholder-image {
+            height: 100%;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            color: white;
+            font-size: 3rem;
+            font-weight: bold;
+            text-align: center;
+            position: relative;
+        }
+
+        .placeholder-image p {
+            font-size: 1rem;
+            margin-top: 1rem;
+            line-height: 1.2;
+        }
+
+        .restaurant-interior {
+            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+        }
+
+        .restaurant-outdoor {
+            background: linear-gradient(135deg, #4facfe 0%, #00f2fe 100%);
+        }
+
+        .restaurant-bar {
+            background: linear-gradient(135deg, #fa709a 0%, #fee140 100%);
+        }
+
+        .restaurant-kitchen {
+            background: linear-gradient(135deg, #ff9a9e 0%, #fecfef 100%);
+        }
+
+        .restaurant-dining {
+            background: linear-gradient(135deg, #a8edea 0%, #fed6e3 100%);
+        }
+
+        .restaurant-terrace {
+            background: linear-gradient(135deg, #ffecd2 0%, #fcb69f 100%);
+        }
+
+        /* Review Styles */
+        .review-card {
+            background: white;
+            border-radius: 15px;
+            padding: 2rem;
+            height: 100%;
+            box-shadow: 0 5px 15px rgba(0,0,0,0.1);
+            transition: all 0.3s ease;
+        }
+
+        .review-card:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 10px 25px rgba(0,0,0,0.15);
+        }
+
+        .review-header {
+            display: flex;
+            align-items: center;
+            margin-bottom: 1rem;
+        }
+
+        .customer-avatar {
+            margin-right: 1rem;
+        }
+
+        .avatar-placeholder {
+            width: 60px;
+            height: 60px;
+            border-radius: 50%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            color: white;
+            font-size: 1.5rem;
+        }
+
+        .customer-1 {
+            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+        }
+
+        .customer-2 {
+            background: linear-gradient(135deg, #f093fb 0%, #f5576c 100%);
+        }
+
+        .customer-3 {
+            background: linear-gradient(135deg, #4facfe 0%, #00f2fe 100%);
+        }
+
+        .customer-info h5 {
+            margin: 0;
+            font-weight: 600;
+            color: var(--primary-color);
+        }
+
+        .rating {
+            color: #ffc107;
+            margin-top: 0.25rem;
+        }
+
+        .review-content p {
+            font-style: italic;
+            color: var(--text-light);
+            margin-bottom: 1rem;
+        }
+
+        @media (max-width: 768px) {
+            .hero-title {
+                font-size: 2.5rem;
+            }
+            
+            .hero-subtitle {
+                font-size: 1.2rem;
+            }
+            
+            .section-title {
+                font-size: 2rem;
+            }
+        }
+    </style>
+</head>
+<body>
+   
+   <!-- Navigation -->
+   <nav class="navbar navbar-expand-lg fixed-top">
+    <div class="container">
+        <a class="navbar-brand" href="#home">
+            <img src="img/logo.jpg" alt="Coco’s Nai Harn Restaurant Logo" width="30" class="me-2"> <span data-key="restaurant-name">Coco’s Nai Harn</span>
+        </a>
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarNav">
+            <ul class="navbar-nav ms-auto">
+                <li class="nav-item">
+                    <a class="nav-link" href="#home"><span data-key="nav-home">หน้าหลัก</span></a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#menu"><span data-key="nav-menu">เมนูอาหาร</span></a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#about"><span data-key="nav-about">เกี่ยวกับเรา</span></a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#gallery"><span data-key="nav-gallery">ภาพร้าน</span></a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#reviews"><span data-key="nav-reviews">รีวิว</span></a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#contact"><span data-key="nav-contact">ติดต่อ</span></a>
+                </li>
+                <li class="nav-item dropdown">
+                    <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown">
+                        <span id="selected-flag" class="fi fi-th me-2"></span> 
+                    </a>
+                    
+                    <ul class="dropdown-menu">
+                        <li>
+                            <a class="dropdown-item" onclick="setLang('th')">
+                                <span class="fi fi-th me-2"></span> ไทย
+                            </a>
+                        </li>
+                        <li>
+                            <a class="dropdown-item" onclick="setLang('en')">
+                                <span class="fi fi-us me-2"></span> English
+                            </a>
+                        </li>
+                    </ul>
+                </li>
+                
+            </ul>
+        </div>
+    </div>
+</nav>
+
+<section id="home" class="hero-section">
+    <div class="hero-content">
+        <h1 class="hero-title" data-key="hero-title">Coco’s Nai Harn</h1>
+        <p class="hero-subtitle" data-key="hero-subtitle">ร้านอาหารต่างชาติริมทะเลที่ให้คุณสัมผัสรสชาติแห่งมหาสมุทร</p>
+        <a href="#menu" class="btn btn-primary-custom btn-lg">
+            <i class="fas fa-utensils me-2"></i><span data-key="view-menu">ดูเมนูอาหาร</span>
+        </a>
+    </div>
+
+</section>
+
+    <!-- Menu Section -->
+    <section id="menu" class="py-5">
+        <div class="container">
+            <h2 class="section-title" data-key="menu-section-title">เมนูอาหารของเรา</h2>
+            <div class="row">
+                <div class="col-lg-4 col-md-6">
+                    <div class="menu-item">
+                        <div class="menu-item-img">
+                            <img src="img/co02.jpg" alt="Grilled Salmon เมนูอาหารทะเลสดใหม่" loading="lazy" class="img-fluid w-100 h-100 object-fit-cover">
+                        </div>
+                        <div class="menu-item-content">
+                            <h3 class="menu-item-title" data-key="menu-item-1-title">Grilled Salmon</h3>
+<p class="text-muted" data-key="menu-item-1-desc">แซลมอนย่างสไตล์เมดิเตอร์เรเนียน เสิร์ฟพร้อมผักสดและซอสมะนาว</p>
+<span class="menu-item-price">฿450</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-4 col-md-6">
+                    <div class="menu-item">
+                        <div class="menu-item-img">
+                            <img src="img/co03.jpg" alt="Seafood Paella เมนูพาเอญ่าทะเล" loading="lazy" class="img-fluid w-100 h-100 object-fit-cover">
+                        </div>
+                        <div class="menu-item-content">
+                            <h3 class="menu-item-title" data-key="menu-item-2-title">Seafood Paella</h3>
+<p class="text-muted" data-key="menu-item-2-desc">พาเอญ่าทะเลสไตล์สเปน กุ้ง หอย ปลาหมึก ในข้าวหอมเครื่องเทศ</p>
+<span class="menu-item-price">฿580</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-4 col-md-6">
+                    <div class="menu-item">
+                        <div class="menu-item-img">
+                            <img src="img/co04.jpg" alt="Seafood Paella เมนูพาเอญ่าทะเล" loading="lazy" class="img-fluid w-100 h-100 object-fit-cover">
+                        </div>
+                        <div class="menu-item-content">
+                            <h3 class="menu-item-title" data-key="menu-item-3-title">Seafood Paella</h3>
+                            <p class="text-muted" data-key="menu-item-2-desc">พาเอญ่าทะเลสไตล์สเปน กุ้ง หอย ปลาหมึก ในข้าวหอมเครื่องเทศ</p>
+                            <span class="menu-item-price">฿580</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-4 col-md-6">
+                    <div class="menu-item">
+                        <div class="menu-item-img">
+                            <img src="img/co05.jpg" alt="Seafood Paella เมนูพาเอญ่าทะเล" loading="lazy" class="img-fluid w-100 h-100 object-fit-cover">
+                        </div>
+                        <div class="menu-item-content">
+                            <h3 class="menu-item-title" data-key="menu-item-4-title">Seafood Paella</h3>
+                            <p class="text-muted" data-key="menu-item-2-desc">พาเอญ่าทะเลสไตล์สเปน กุ้ง หอย ปลาหมึก ในข้าวหอมเครื่องเทศ</p>
+                            <span class="menu-item-price">฿580</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-4 col-md-6">
+                    <div class="menu-item">
+                        <div class="menu-item-img">
+                            <img src="img/co06.jpg" alt="Seafood Paella เมนูพาเอญ่าทะเล" loading="lazy" class="img-fluid w-100 h-100 object-fit-cover">
+                        </div>
+                        <div class="menu-item-content">
+                            <h3 class="menu-item-title" data-key="menu-item-5-title">Seafood Paella</h3>
+                            <p class="text-muted" data-key="menu-item-2-desc">พาเอญ่าทะเลสไตล์สเปน กุ้ง หอย ปลาหมึก ในข้าวหอมเครื่องเทศ</p>
+                            <span class="menu-item-price">฿580</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-4 col-md-6">
+                    <div class="menu-item">
+                        <div class="menu-item-img">
+                            <img src="img/co02.jpg" alt="Seafood Paella เมนูพาเอญ่าทะเล" loading="lazy" class="img-fluid w-100 h-100 object-fit-cover">
+                        </div>
+                        <div class="menu-item-content">
+                            <h3 class="menu-item-title" data-key="menu-item-6-title">Seafood Paella</h3>
+<p class="text-muted" data-key="menu-item-2-desc">พาเอญ่าทะเลสไตล์สเปน กุ้ง หอย ปลาหมึก ในข้าวหอมเครื่องเทศ</p>
+<span class="menu-item-price">฿580</span>
+                        </div>
+                    </div>
+                </div>
+                <!-- เพิ่มเมนูอื่น ๆ แบบเดียวกัน -->
+            </div>
+        </div>
+    </section>
+
+    <!-- About Section -->
+    <section id="about" class="about-section">
+        <div class="container">
+            <h2 class="section-title" data-key="about-section-title">เกี่ยวกับเรา</h2>
+            <div class="row align-items-center">
+                <div class="col-lg-6">
+                    <div class="about-content">
+                        <h3 class="h4 mb-3" data-key="about-subtitle">ประสบการณ์รสชาติแห่งมหาสมุทร</h3>
+                        <p class="lead" data-key="about-description-1">
+                            Coco’s Nai Harn Restaurant เป็นร้านอาหารต่างชาติริมทะเลที่ผสมผสานรสชาติจากทั่วโลก โดยเฉพาะอาหารเมดิเตอร์เรเนียน อาหารยุโรป และอาหารทะเลสด
+                        </p>                       
+                        <p data-key="about-description-2">
+                            เราใช้วัตถุดิบสดใหม่จากท้องทะเล ผสมผสานกับเทคนิคการปรุงแบบดั้งเดิม เพื่อมอบประสบการณ์การรับประทานอาหารที่ไม่เหมือนใครให้กับคุณ
+                        </p>                      
+                        <div class="row mt-4">
+                            <div class="col-6">
+                                <h5><i class="fas fa-clock text-warning me-2"></i><span data-key="about-hours">เปิดทุกวัน</span></h5>
+                                <p class="text-muted"><span data-key="about-hours-time">10:00 - 23:00 น.</span></p>
+                            </div>
+                            <div class="col-6">
+                                <h5><i class="fas fa-utensils text-warning me-2"></i><span data-key="about-fresh">อาหารสด</span></h5>
+                                <p class="text-muted"><span data-key="about-fresh-desc">วัตถุดิบจากทะเล</span></p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-6">
+                    <div class="about-image text-center">
+                        <div class="bg-primary rounded-circle d-inline-flex align-items-center justify-content-center" style="width: 300px; height: 300px;">
+                            <img src="img/co02.jpg" alt="Grilled Salmon เมนูอาหารทะเลสดใหม่" loading="lazy" class="img-fluid w-100 h-100 object-fit-cover">
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Gallery Section -->
+    <section id="gallery" class="py-5">
+        <div class="container">
+            <h2 class="section-title" data-key="gallery-section-title">บรรยากาศภายในร้าน</h2>
+            <div class="row g-4">
+                <div class="col-lg-4 col-md-6">
+                    <div class="gallery-item">
+                        <img src="img/co001.jpg" alt="บรรยากาศโรแมนติกภายในร้าน Coco’s Nai Harn " loading="lazy" class="img-fluid w-100 h-100 object-fit-cover">
+                    </div>
+                </div>
+                <div class="col-lg-4 col-md-6">
+                    <div class="gallery-item">
+                        <img src="img/co007.jpg" alt="ที่นั่งกลางแจ้งชมวิวทะเล" loading="lazy" class="img-fluid w-100 h-100 object-fit-cover">
+                    </div>
+                </div>
+                <div class="col-lg-4 col-md-6">
+                    <div class="gallery-item">
+                        <img src="img/co006.jpg" alt="ที่นั่งกลางแจ้งชมวิวทะเล" loading="lazy" class="img-fluid w-100 h-100 object-fit-cover">
+                    </div>
+                </div>
+                <div class="col-lg-4 col-md-6">
+                    <div class="gallery-item">
+                        <img src="img/co003.jpg" alt="ที่นั่งกลางแจ้งชมวิวทะเล" loading="lazy" class="img-fluid w-100 h-100 object-fit-cover">
+                    </div>
+                </div>
+                <div class="col-lg-4 col-md-6">
+                    <div class="gallery-item">
+                        <img src="img/co004.jpg" alt="ที่นั่งกลางแจ้งชมวิวทะเล" loading="lazy" class="img-fluid w-100 h-100 object-fit-cover">
+                    </div>
+                </div>
+                <div class="col-lg-4 col-md-6">
+                    <div class="gallery-item">
+                        <img src="img/co005.jpg" alt="ที่นั่งกลางแจ้งชมวิวทะเล" loading="lazy" class="img-fluid w-100 h-100 object-fit-cover">
+                    </div>
+                </div>
+                
+                <!-- เพิ่ม gallery อื่น ๆ แบบเดียวกัน -->
+            </div>
+        </div>
+    </section>
+
+    <!-- Customer Reviews Section -->
+    <section id="reviews" class="py-5" style="background: #f8f9fa;">
+        <div class="container">
+            <h2 class="section-title" data-key="reviews-section-title">ความประทับใจจากลูกค้า</h2>            <div class="row">
+                <div class="col-lg-4 col-md-6 mb-4">
+                    <div class="review-card">
+                        <div class="review-header">
+                            <div class="customer-avatar">
+                                <div class="avatar-placeholder customer-1">
+                                    <i class="fas fa-user"></i>
+                                </div>
+                            </div>
+                            <div class="customer-info">
+                                <h5>Daniel Smith</h5>
+                                <div class="rating">
+                                    <i class="fas fa-star"></i>
+                                    <i class="fas fa-star"></i>
+                                    <i class="fas fa-star"></i>
+                                    <i class="fas fa-star"></i>
+                                    <i class="fas fa-star"></i>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="review-content">
+                            <p data-key="review-1-text">
+                                "The food was absolutely delicious. The sea view was stunning, and the atmosphere was so romantic — perfect for a date with your partner. The staff provided excellent service. I’ll definitely come back again!"
+                            </p>
+                            <small class="text-muted" data-key="review-1-date">2 สัปดาห์ที่แล้ว</small>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-4 col-md-6 mb-4">
+                    <div class="review-card">
+                        <div class="review-header">
+                            <div class="customer-avatar">
+                                <div class="avatar-placeholder customer-2">
+                                    <i class="fas fa-user"></i>
+                                </div>
+                            </div>
+                            <div class="customer-info">
+                                <h5>Emily Carter</h5>
+                                <div class="rating">
+                                    <i class="fas fa-star"></i>
+                                    <i class="fas fa-star"></i>
+                                    <i class="fas fa-star"></i>
+                                    <i class="fas fa-star"></i>
+                                    <i class="fas fa-star"></i>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="review-content">
+                            <p data-key="review-2-text">
+                                "Came with my family — everyone loved it! The seafood was fresh, flavorful, and reasonably priced. The place was clean with a beautiful view. Highly recommended"
+                            </p>
+                            <small class="text-muted" data-key="review-2-date">1 เดือนที่แล้ว</small>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-4 col-md-6 mb-4">
+                    <div class="review-card">
+                        <div class="review-header">
+                            <div class="customer-avatar">
+                                <div class="avatar-placeholder customer-3">
+                                    <i class="fas fa-user"></i>
+                                </div>
+                            </div>
+                            <div class="customer-info">
+                                <h5>John Wilson</h5>
+                                <div class="rating">
+                                    <i class="fas fa-star"></i>
+                                    <i class="fas fa-star"></i>
+                                    <i class="fas fa-star"></i>
+                                    <i class="fas fa-star"></i>
+                                    <i class="fas fa-star"></i>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="review-content">
+                            <p data-key="review-3-text">
+                                "Amazing seafood restaurant! The view is spectacular and the food is authentic. The grilled salmon was perfectly cooked. Highly recommend for tourists visiting Thailand!"
+                            </p>
+                            <small class="text-muted" data-key="review-3-date">3 สัปดาห์ที่แล้ว</small>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section id="contact" class="contact-section">
+        <div class="container">
+            <h2 class="section-title text-white" data-key="contact-section-title">ติดต่อเรา</h2>
+            <div class="row">
+                <div class="col-lg-4">
+                    <div class="contact-info text-center">
+                        <i class="fas fa-map-marker-alt"></i>
+                        <h4 data-key="contact-address">ที่อยู่</h4>
+                        <p data-key="contact-address-detail">123 ถนนเลียบชายหาดป่าตอง<br>ตำบลป่าตอง อำเภอกะทู้<br>จังหวัดภูเก็ต 83150</p>
+                    </div>
+                </div>
+                <div class="col-lg-4">
+                    <div class="contact-info text-center">
+                        <i class="fas fa-phone"></i>
+                        <h4 data-key="contact-phone">โทรศัพท์</h4>
+                        <p data-key="contact-phone-detail">038-123-456<br>081-234-5678</p>
+                    </div>
+                </div>
+                <div class="col-lg-4">
+                    <div class="contact-info text-center">
+                        <i class="fas fa-envelope"></i>
+                        <h4 data-key="contact-email">อีเมล</h4>
+                        <p data-key="contact-email-detail">info@oceanbreezerestaurant.com<br>reservation@oceanbreezerestaurant.com</p>
+                    </div>
+                </div>
+            </div>
+            <div class="row mt-5">
+                <div class="col-12 text-center">
+                    <h4 class="mb-3" data-key="contact-reservation-heading">จองโต๊ะล่วงหน้า</h4>
+                    <p class="lead" data-key="contact-reservation-desc">โทร 038-123-456 หรือส่งข้อความผ่าน Facebook</p>
+                    <div class="social-links mt-4">
+                        <a href="#"><i class="fab fa-facebook" aria-label="Facebook"></i></a>
+                        <a href="#"><i class="fab fa-instagram" aria-label="Instagram"></i></a>
+                        <a href="#"><i class="fab fa-line" aria-label="Line"></i></a>
+                        <a href="#"><i class="fab fa-tripadvisor" aria-label="TripAdvisor"></i></a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+   <!-- Footer -->
+<footer class="footer">
+    <div class="container">
+        <div class="row">
+            <div class="col-12 text-center">
+                <p>&copy; 2025 Coco’s Nai Harn Restaurant. All rights reserved.</p>
+                <p class="text-muted" data-key="footer-description">ร้านอาหารต่างชาติริมทะเลที่ให้คุณสัมผัสรสชาติแห่งมหาสมุทร</p>
+            </div>
+        </div>
+    </div>
+</footer>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.3.0/js/bootstrap.bundle.min.js"></script>
+     <!-- JS -->
+     <script src="script.js"></script>
+    
+</body>
+</html>
